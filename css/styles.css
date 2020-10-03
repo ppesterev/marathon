@@ -51,7 +51,7 @@ input[type="submit"] {
     justify-content: space-between;
 
     height: 581px;
-    background-image: url("marathon/img/page1-header-bg.jpg");
+    background-image: url("/marathon/img/page1-header-bg.jpg");
 }
 
 .page-section,
@@ -296,7 +296,7 @@ input[type="submit"] {
     height: 637px;
     margin: auto;
     padding: 53px 80px 62px;
-    background-image: url("marathon/img/contactme-form-bg.jpg");
+    background-image: url("/marathon/img/contactme-form-bg.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border-radius: 10px;
@@ -366,7 +366,7 @@ input[type="submit"] {
 /* Article page */
 
 .site-header--article {
-    background-image: url("marathon/img/page2-header-bg.jpg");
+    background-image: url("/marathon/img/page2-header-bg.jpg");
 }
 
 .page-article {
@@ -434,7 +434,7 @@ input[type="submit"] {
 }
 
 .article-likes__btn {
-    background-image: url("marathon/img/icons/like.svg");
+    background-image: url("/marathon/img/icons/like.svg");
 }
 
 .article-share li:not(:last-child) {
@@ -442,15 +442,15 @@ input[type="submit"] {
 }
 
 .article-share__btn--twitter {
-    background-image: url("marathon/img/icons/twitter.svg");
+    background-image: url("/marathon/img/icons/twitter.svg");
 }
 
 .article-share__btn--facebook {
-    background-image: url("marathon/img/icons/facebook.svg");
+    background-image: url("/marathon/img/icons/facebook.svg");
 }
 
 .article-share__btn--vk {
-    background-image: url("marathon/img/icons/vk.svg");
+    background-image: url("/marathon/img/icons/vk.svg");
 }
 
 .article-back-link {
@@ -467,7 +467,7 @@ input[type="submit"] {
     width: 63px;
     height: 20px;
     margin-left: 26px;
-    background-image: url("marathon/img/icons/arrow.svg");
+    background-image: url("/marathon/img/icons/arrow.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
