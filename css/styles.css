@@ -192,6 +192,10 @@ input[type="submit"]:active {
     position: relative;
 }
 
+.article-card.hidden {
+    display: none;
+}
+
 .article-card--featured {
     min-width: 380px;
 }
