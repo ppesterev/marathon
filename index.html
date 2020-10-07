@@ -49,7 +49,7 @@
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: путешествия</span>
-                            <time class="article-card__timestamp">29.09.2020</time>
+                            <time datetime="2020-09-29" class="article-card__timestamp">29.09.2020</time>
                         </footer>
                     </div>
                 </article>
@@ -62,7 +62,7 @@
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: город</span>
-                            <time class="article-card__timestamp">24.07.2020</time>
+                            <time datetime="2020-07-24" class="article-card__timestamp">24.07.2020</time>
                         </footer>
                     </div>
                 </article>
@@ -75,7 +75,7 @@
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: книги</span>
-                            <time class="article-card__timestamp">15.07.2020</time>
+                            <time datetime="2020-07-15" class="article-card__timestamp">15.07.2020</time>
                         </footer>
                     </div>
                 </article>
@@ -88,7 +88,7 @@
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: фотографии</span>
-                            <time class="article-card__timestamp">29.06.2020</time>
+                            <time datetime="2020-06-29" class="article-card__timestamp">29.06.2020</time>
                         </footer>
                     </div>
                 </article>
@@ -101,7 +101,7 @@
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: рецепты</span>
-                            <time class="article-card__timestamp">24.06.2020</time>
+                            <time datetime="2020-06-24" class="article-card__timestamp">24.06.2020</time>
                         </footer>
                     </div>
                 </article>
@@ -174,16 +174,16 @@
         <form action="#" class="contactme-form">
             <div class="contactme-form-field">
                 <label for="contactme_name">Ваше имя</label>
-                <input type="text" id="contactme_name" placeholder="Иван Иванов">
+                <input type="text" id="contactme_name" placeholder="Иван Иванов" required>
             </div>
 
             <div class="contactme-form-field">
                 <label for="contactme_email">E-mail</label>
-                <input type="email" name="email" id="contactme_email" placeholder="google@gmail.com">
+                <input type="email" name="email" id="contactme_email" placeholder="google@gmail.com" required>
             </div>
             <div class="contactme-form-message">
                 <label for="contactme_message">Сообщение</label>
-                <textarea name="message" id="contactme_message" placeholder="Напишите здесь ваше сообщение."></textarea>
+                <textarea name="message" id="contactme_message" placeholder="Напишите здесь ваше сообщение." minlength="10" maxlength="200"></textarea>
             </div>
             <input type="submit" value="Отправить" class="contactme-form__submit">
         </form>

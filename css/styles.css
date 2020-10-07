@@ -1,5 +1,9 @@
 /* Common */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1440px;
     margin: auto;
