@@ -91,7 +91,7 @@ input[type="submit"]:active {
 }
 
 .main-menu > ul {
-    margin: 0;
+    margin: 0 -15px 0 0;
     padding: 0;
     padding-top: 33px;
     display: flex;
@@ -102,6 +102,10 @@ input[type="submit"]:active {
 
 .main-menu__item {
     margin-right: 83px;
+}
+
+.main-menu__item a {
+    padding: 10px 15px;
 }
 
 .main-menu__item:last-child {
@@ -243,7 +247,7 @@ input[type="submit"]:active {
 }
 
 .bio-photo {
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 10px;
 }
 
@@ -251,7 +255,6 @@ input[type="submit"]:active {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    margin-left: 10px;
 }
 
 .bio-text-main {
