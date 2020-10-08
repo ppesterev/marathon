@@ -477,12 +477,21 @@ input[type="submit"]:active {
     left: 1px;
 }
 
+/* .article-likes__btn:focus,
+.article-share__btn:focus {
+    outline: none;
+} */
+
 .article-likes__count {
     font-size: 24px;
 }
 
 .article-likes__btn {
     background-image: url("/img/icons/like.svg");
+}
+
+.article-likes__btn.pressed {
+    filter: drop-shadow(1px 1px 5px navy);
 }
 
 .article-share li:not(:last-child) {
@@ -551,6 +560,7 @@ input[type="submit"]:active {
 
 .comment__text {
     margin-top: 16px;
+    word-wrap: break-word;
 }
 
 /* Comment form */

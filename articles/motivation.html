@@ -102,6 +102,15 @@
                     Основательный материал! Можешь посоветовать какие-то книги на эту тему?
                 </p>
             </article>
+            <template id="comment_template">
+                <article class="comment">
+                    <div class="comment-author-info">
+                        <img src="/files/avatars/av3.jpg" alt="Аватар пользователя" class="comment__avatar">
+                        <span class="comment__username"></span>
+                    </div>
+                    <p class="comment__text"></p>
+                </article>
+            </template>
         </div>
 
         <form action="#" class="comment-form">
@@ -118,7 +127,7 @@
                     </div>
                     <input type="submit" value="Отправить">
                 </fieldset>
-                <textarea name="comment_text" placeholder="Написать комметарий&hellip;" minlength="10" maxlength="200"></textarea>
+                <textarea name="comment_text" placeholder="Написать комметарий&hellip;" minlength="10" maxlength="200" required></textarea>
             </div>
         </form>
     </section>
@@ -131,5 +140,7 @@
             <li><a href="https://twitter.com">Твиттер</a></li>
         </ul>
     </footer>
+
+    <script src="/js/article.js"></script>
 </body>
 </html>
