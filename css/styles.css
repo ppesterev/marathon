@@ -166,7 +166,7 @@ input[type="submit"]:active {
     border: none;
     border-radius: 10px;
     appearance: none;
-    background-image: url("/img/icons/select-arrow.svg");
+    background-image: url("/marathon/img/icons/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: calc(100% - 12px) 50%;
     outline: none;
