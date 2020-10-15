@@ -40,73 +40,93 @@
                 </select>
             </header>
             <div class="articles-container">
-                <article class="article-card">
-                    <img src="/marathon/files/article-images/berlin.jpg" alt="" class="article-card__image">
+                <article class="article-card" data-tags="travel">
+                    <a href="/marathon/articles/berlin.html">
+                        <img src="/marathon/files/article-images/berlin.jpg" alt="Иллюстрация к статье 'Путешествие в Берлин в августе'" class="article-card__image">
+                    </a>
                     <div class="article-card-info">
-                        <h3 class="article-card__title">Путешествие в Берлин в августе</h3>
+                        <a href="/articles/berlin.html">
+                            <h3 class="article-card__title">Путешествие в Берлин в августе</h3>
+                        </a>
                         <p class="article-card__summary">
                             Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: путешествия</span>
-                            <time class="article-card__timestamp">29.09.2020</time>
+                            <time datetime="2020-09-29" class="article-card__timestamp">29.09.2020</time>
                         </footer>
                     </div>
                 </article>
-                <article class="article-card">
-                    <img src="/marathon/files/article-images/coldbrew.jpg" alt="" class="article-card__image">
+                <article class="article-card" data-tags="city">
+                    <a href="/marathon/articles/coldbrew.html">
+                        <img src="/marathon/files/article-images/coldbrew.jpg" alt="" class="article-card__image">
+                    </a>
                     <div class="article-card-info">
-                        <h3 class="article-card__title">Где выпить колдбрю в Москве</h3>
+                        <a href="/articles/coldbrew.html">
+                            <h3 class="article-card__title">Где выпить колдбрю в Москве</h3>
+                        </a>
                         <p class="article-card__summary">
                             Собрала для вас список любимых кофеен, где подают лучший летний напиток.
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: город</span>
-                            <time class="article-card__timestamp">24.07.2020</time>
+                            <time datetime="2020-07-24" class="article-card__timestamp">24.07.2020</time>
                         </footer>
                     </div>
                 </article>
-                <article class="article-card">
-                    <img src="/marathon/files/article-images/books.jpg" alt="" class="article-card__image">
+                <article class="article-card" data-tags="books">
+                    <a href="/marathon/articles/books.html">
+                        <img src="/marathon/files/article-images/books.jpg" alt="" class="article-card__image">
+                    </a>
                     <div class="article-card-info">
-                        <h3 class="article-card__title">Прочитано: книжные рекомендации</h3>
+                        <a href="/articles/books.html">
+                            <h3 class="article-card__title">Прочитано: книжные рекомендации</h3>
+                        </a>
                         <p class="article-card__summary">
                             Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: книги</span>
-                            <time class="article-card__timestamp">15.07.2020</time>
+                            <time datetime="2020-07-15" class="article-card__timestamp">15.07.2020</time>
                         </footer>
                     </div>
                 </article>
-                <article class="article-card article-card--featured">
-                    <img src="/marathon/files/article-images/film.jpg" alt="" class="article-card__image">
+                <article class="article-card article-card--featured" data-tags="photo">
+                    <a href="/marathon/articles/film.html">
+                        <img src="/marathon/files/article-images/film.jpg" alt="" class="article-card__image">
+                    </a>
                     <div class="article-card-info">
-                        <h3 class="article-card__title">Снимки на плёнку</h3>
+                        <a href="/articles/film.html">
+                            <h3 class="article-card__title">Снимки на плёнку</h3>
+                        </a>
                         <p class="article-card__summary">
                             Поделилась с вами весенними фотографиями, и секретами удачных снимков.
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: фотографии</span>
-                            <time class="article-card__timestamp">29.06.2020</time>
+                            <time datetime="2020-06-29" class="article-card__timestamp">29.06.2020</time>
                         </footer>
                     </div>
                 </article>
-                <article class="article-card article-card--featured ">
-                    <img src="/marathon/files/article-images/cheesecake.jpg" alt="" class="article-card__image">
+                <article class="article-card article-card--featured" data-tags="recipes">
+                    <a href="/marathon/articles/cheesecake.html">
+                        <img src="/marathon/files/article-images/cheesecake.jpg" alt="" class="article-card__image">
+                    </a>
                     <div class="article-card-info">
-                        <h3 class="article-card__title">Домашний чизкейк</h3>
+                        <a href="/articles/cheesecake.html">
+                            <h3 class="article-card__title">Домашний чизкейк</h3>
+                        </a>
                         <p class="article-card__summary">
                             Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!
                         </p>
                         <footer class="article-card-footer">
                             <span class="article-card__tags">Теги: рецепты</span>
-                            <time class="article-card__timestamp">24.06.2020</time>
+                            <time datetime="2020-06-24" class="article-card__timestamp">24.06.2020</time>
                         </footer>
                     </div>
                 </article>
             </div>
-            <button class="btn-show-more">Показать еще</button>
+            <button type="button" class="btn-show-more">Показать еще</button>
         </section>
     
         <section class="page-section bio" id="section_bio">
@@ -122,7 +142,7 @@
                             Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!
                         </p>
                         <p>
-                            Если вы хотите написать мне — это можно сделать в соцсетях или через <a href="#section_contactme">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.
+                            Если вы хотите написать мне — это можно сделать в соцсетях или через <a class="inline-link" href="#section_contactme">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.
                         </p>
                         <p>Приятного чтения!</p>
                     </div>
@@ -166,7 +186,7 @@
                     <img src="/marathon/files/portfolio-images/remote-work.jpg" alt="Иллюстрация к статье" class="portfolio-card__image">
                 </article>
             </div>
-            <button class="btn-show-more">Показать еще</button>
+            <button type="button" class="btn-show-more">Показать еще</button>
         </section>
     </main>
     <section class="page-section contact-me" id="section_contactme">
@@ -174,16 +194,16 @@
         <form action="#" class="contactme-form">
             <div class="contactme-form-field">
                 <label for="contactme_name">Ваше имя</label>
-                <input type="text" id="contactme_name" placeholder="Иван Иванов">
+                <input type="text" id="contactme_name" placeholder="Иван Иванов" required>
             </div>
 
             <div class="contactme-form-field">
                 <label for="contactme_email">E-mail</label>
-                <input type="email" name="email" id="contactme_email" placeholder="google@gmail.com">
+                <input type="email" name="email" id="contactme_email" placeholder="google@gmail.com" required>
             </div>
             <div class="contactme-form-message">
                 <label for="contactme_message">Сообщение</label>
-                <textarea name="message" id="contactme_message" placeholder="Напишите здесь ваше сообщение."></textarea>
+                <textarea name="message" id="contactme_message" placeholder="Напишите здесь ваше сообщение." minlength="10" maxlength="200"></textarea>
             </div>
             <input type="submit" value="Отправить" class="contactme-form__submit">
         </form>
@@ -196,5 +216,7 @@
             <li><a href="https://twitter.com">Твиттер</a></li>
         </ul>
     </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

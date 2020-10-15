@@ -1,5 +1,9 @@
 /* Common */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1440px;
     margin: auto;
@@ -15,9 +19,11 @@ a {
 }
 
 a:hover,
-a:active {
+a:active,
+.inline-link {
     text-decoration: underline;
 }
+
 
 h1, h2, h3 {
     font-family: 'Spectral SC', serif;
@@ -38,6 +44,18 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .site-header,
 .page-section,
 .page-article,
@@ -47,8 +65,9 @@ input[type="submit"] {
 
 .site-header {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
 
     height: 581px;
     background-image: url("/marathon/img/page1-header-bg.jpg");
@@ -72,16 +91,21 @@ input[type="submit"] {
 }
 
 .main-menu > ul {
-    margin: 0;
+    margin: 0 -15px 0 0;
     padding: 0;
     padding-top: 33px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-end;
     list-style: none;
 }
 
 .main-menu__item {
     margin-right: 83px;
+}
+
+.main-menu__item a {
+    padding: 10px 15px;
 }
 
 .main-menu__item:last-child {
@@ -138,9 +162,14 @@ input[type="submit"] {
     height: 46px;
     box-sizing: border-box;
     padding: 12px 20px;
-    background: #d7d1c9;
+    background-color: #d7d1c9;
     border: none;
     border-radius: 10px;
+    appearance: none;
+    background-image: url("/img/icons/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) 50%;
+    outline: none;
 }
 
 .articles-container {
@@ -159,8 +188,13 @@ input[type="submit"] {
 .article-card {
     flex: 1 0 30%;
     min-width: 250px;
+    max-width: 50%;
     margin: 0 10px 62px;
     position: relative;
+}
+
+.article-card.hidden {
+    display: none;
 }
 
 .article-card--featured {
@@ -218,7 +252,7 @@ input[type="submit"] {
 }
 
 .bio-photo {
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 10px;
 }
 
@@ -226,7 +260,6 @@ input[type="submit"] {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    margin-left: 10px;
 }
 
 .bio-text-main {
@@ -420,14 +453,35 @@ input[type="submit"] {
 
 .article-likes__btn,
 .article-share__btn {
+    position: relative;
+    display: inline-block;
     width: 50px;
     height: 50px;
     border: none;
+    border-radius: 0;
     background-color: transparent;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
+.article-likes__btn:hover,
+.article-share__btn:hover,
+.article-likes__btn:active,
+.article-share__btn:active {
+    background-color: transparent;
+}
+
+.article-likes__btn:active,
+.article-share__btn:active {
+    top: 2px;
+    left: 1px;
+}
+
+/* .article-likes__btn:focus,
+.article-share__btn:focus {
+    outline: none;
+} */
 
 .article-likes__count {
     font-size: 24px;
@@ -435,6 +489,10 @@ input[type="submit"] {
 
 .article-likes__btn {
     background-image: url("/marathon/img/icons/like.svg");
+}
+
+.article-likes__btn.pressed {
+    filter: drop-shadow(1px 1px 5px navy);
 }
 
 .article-share li:not(:last-child) {
@@ -503,6 +561,7 @@ input[type="submit"] {
 
 .comment__text {
     margin-top: 16px;
+    word-wrap: break-word;
 }
 
 /* Comment form */

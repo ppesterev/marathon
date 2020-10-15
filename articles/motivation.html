@@ -18,10 +18,10 @@
         </a>
         <nav class="main-menu">
             <ul>
-                <li class="main-menu__item"><a href="#section_articles">Статьи</a></li>
-                <li class="main-menu__item"><a href="#section_bio">Обо мне</a></li>
-                <li class="main-menu__item"><a href="#section_portfolio">Портфолио</a></li>
-                <li class="main-menu__item"><a href="#section_contactme">Написать мне</a></li>
+                <li class="main-menu__item"><a href="/index.html#section_articles">Статьи</a></li>
+                <li class="main-menu__item"><a href="/index.html#section_bio">Обо мне</a></li>
+                <li class="main-menu__item"><a href="/index.html#section_portfolio">Портфолио</a></li>
+                <li class="main-menu__item"><a href="/index.html#section_contactme">Написать мне</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +31,7 @@
             <header class="article-header">
                 <h1>Как себя мотивировать</h1>
                 <span class="article-header__tags">Теги: путешествия, друзья</span>
-                <time class="article-header__date" datetime="">29.09.2020</time>
+                <time datetime="2020-09-29" class="article-header__date">29.09.2020</time>
             </header>
             <p>
                 Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам бороться с соблазнами» Ирины Якутенко.
@@ -58,13 +58,13 @@
             <footer class="article-footer">
                 <div class="article-footer-buttons">
                     <div class="article-likes">
-                        <button class="article-likes__btn"></button>
+                        <button type="button" class="article-likes__btn"></button>
                         <span class="article-likes__count">16</span>
                     </div>
                     <ul class="article-share">
-                        <li><button class="article-share__btn article-share__btn--twitter"></button></li>
-                        <li><button class="article-share__btn article-share__btn--facebook"></button></li>
-                        <li><button class="article-share__btn article-share__btn--vk"></button></li>
+                        <li><button type="button" class="article-share__btn article-share__btn--twitter"></button></li>
+                        <li><button type="button" class="article-share__btn article-share__btn--facebook"></button></li>
+                        <li><button type="button" class="article-share__btn article-share__btn--vk"></button></li>
                     </ul>
                 </div>
                 <a class="article-back-link" href="/marathon/">Ко всем статьям</a>
@@ -102,6 +102,15 @@
                     Основательный материал! Можешь посоветовать какие-то книги на эту тему?
                 </p>
             </article>
+            <template id="comment_template">
+                <article class="comment">
+                    <div class="comment-author-info">
+                        <img src="/files/avatars/av3.jpg" alt="Аватар пользователя" class="comment__avatar">
+                        <span class="comment__username"></span>
+                    </div>
+                    <p class="comment__text"></p>
+                </article>
+            </template>
         </div>
 
         <form action="#" class="comment-form">
@@ -118,7 +127,7 @@
                     </div>
                     <input type="submit" value="Отправить">
                 </fieldset>
-                <textarea name="comment_text" placeholder="Написать комметарий&hellip;" required></textarea>
+                <textarea name="comment_text" placeholder="Написать комметарий&hellip;" minlength="10" maxlength="200" required></textarea>
             </div>
         </form>
     </section>
@@ -131,5 +140,7 @@
             <li><a href="https://twitter.com">Твиттер</a></li>
         </ul>
     </footer>
+
+    <script src="/js/article.js"></script>
 </body>
 </html>
