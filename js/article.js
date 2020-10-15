@@ -16,6 +16,7 @@ likeBtn.addEventListener('click', function() {
 });
 
 // Commenting
+
 const commentForm = document.querySelector('.comment-form');
 const nameInput = commentForm.querySelector('input[name="name"');
 const commentTextInput = commentForm.querySelector('textarea[name="comment_text"');

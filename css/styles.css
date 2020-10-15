@@ -188,6 +188,7 @@ input[type="submit"]:active {
 .article-card {
     flex: 1 0 30%;
     min-width: 250px;
+    max-width: 50%;
     margin: 0 10px 62px;
     position: relative;
 }

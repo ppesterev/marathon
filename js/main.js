@@ -12,20 +12,3 @@ filterSelect.addEventListener('change', function() {
         }
     }
 });
-
-// message length validation
-
-// const contactForm = document.querySelector('.contactme-form');
-// const messageField = contactForm.querySelector('#contactme_message');
-// const contactFormSubmit = contactForm.querySelector('.contactme-form__submit');
-
-// contactForm.addEventListener('submit', function() {
-//     if (messageField.value.length < messageField.minLength
-//         || messageField.value.length > messageField.maxLength) {
-//         messageField.style = "color: red";
-//         contactFormSubmit.disabled = true;
-//     } else {
-//         messageField.style = "";
-//         contactFormSubmit.disabled = false;
-//     }
-// })
